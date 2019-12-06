@@ -13,7 +13,7 @@ function main(sources) {
   const sinks = {
     DOM: numbers$.map((number) => 
       div([
-        button('.decrement', 'decrement'),
+        button('.decrement',{attrs: {id: 'aaa'}}, 'decrement'),
         button('.increment', 'increment'),
         p([
           label(number)
